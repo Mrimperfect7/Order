@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titl>AKFX</titl>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Image Store</h1>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Upload Image</h2>
+            <input type="file" id="imageInput">
+            <button id="uploadBtn">Upload</button>
+            <div id="imagePreview"></div>
+        </section>
+        <section id="order-section">
+            <h2>Place Order</h2>
+            <form id="orderForm">
+                <label for="imageSelect">Select Image:</label>
+                <select id="imageSelect"></select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" value="1">
+                <button type="submit">Order</button>
+            </form>
+            <div id="orderStatus"></div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
